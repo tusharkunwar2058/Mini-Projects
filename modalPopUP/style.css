@@ -1,0 +1,37 @@
+#box{
+    background-color: bisque;
+    color: black;
+    height: 196px;
+    width: 500px;
+    /* visibility: hidden; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    border-radius: 8px;
+
+}
+
+#box.show{
+    display: flex;
+}
+
+#para{
+    font-size: 50px;
+}
+
+
+#cross{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+}
