@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form id="myForm" action="" onsubmit="validateForm(event)">
+        <div class="innerContainer">
+
+            <label for="">User Name</label> <br>
+            <input type="text" id="userName"> <br>
+            <p class="error" id="userError"></p>
+
+            <label for="">Password</label> <br>
+            <input type="password" id="password"> <br>
+            <p class="error" id="passwordError"></p>
+
+            <label for="">Confirm Password</label> <br>
+            <input type="password" id="confirmPassword"> <br>
+            <p class="error" id="confirmPasswordError1"></p>
+            <p class="error" id="confirmPasswordError2"></p>
+
+            <button type="submit" id="submit">Submit</button>
+            
+        </div>
+    </form>
+    
+    <p id="demo"></p>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
