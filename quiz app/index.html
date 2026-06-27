@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+
+    <style>
+        #error {
+            color: red;
+        }
+
+        #submit {
+            background-color: rgb(64, 168, 142);
+            border: none;
+            border-radius: 5px;
+            height: 50px;
+            width: 70px;
+        }
+
+        #reset {
+            background-color: rgb(207, 14, 14);
+            border: none;
+            border-radius: 5px;
+            height: 50px;
+            width: 70px;
+        }
+
+        /* kinda silly but this is what needs to be done to make button appear straight
+         in single line otherwise they just don't appear */
+        .container{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <p id="demo"></p>
+    <p id="error"></p>
+    <p id="answer"></p>
+
+    <!-- rough to check radio button -->
+    <!-- <input type="radio" id="banana" name="fruit" value="banana">
+  <label for="apple">Apple</label><br> -->
+
+    <div class="container">
+        <button id="submit">Submit</button>
+        <button id="reset">Start Over</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
